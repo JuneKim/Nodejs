@@ -15,7 +15,7 @@ var server = app.listen(3000, function() {
 
 app.use(express.static('public'));
 
-app.use(bodyParser.urlenencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
   secret: "June Robotics",
   resave: false,
